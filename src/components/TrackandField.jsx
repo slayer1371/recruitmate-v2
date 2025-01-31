@@ -8,10 +8,11 @@ import Newsletter from "../assets/Newsletter";
 import Team from "../assets/Team";
 import Testimonials from "../assets/Testimonials";
 import {Fade} from "react-awesome-reveal";
+// import trackfield from "../assets/videos/trackfield.mp4"
 
 export default function TrackandField(){
     return <>
-    <Hero video = "https://github.com/slayer1371/recruitmate-v2/blob/main/src/assets/video/video.mp4" sport = "Football" linkto = "/football" />
+    <Hero video = "/videos/trackfield.mp4" sport = "Football" linkto = "/football" />
     <Fade cascade damping={0.08}>
     <Feature />
     <Cta />

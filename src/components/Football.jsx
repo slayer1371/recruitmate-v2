@@ -8,10 +8,11 @@ import Newsletter from "../assets/Newsletter";
 import Team from "../assets/Team";
 import Testimonials from "../assets/Testimonials";
 import { Fade } from "react-awesome-reveal";
+// import football from "../assets/videos/football.mp4"
 
 export default function Football(){
     return <>
-    <Hero video = "https://github.com/slayer1371/recruitmate-v2/blob/main/src/assets/video/videoplayback.mp4" sport = "Track-Field" linkto = "/"/>
+    <Hero video = "/videos/football.mp4" sport = "Track-Field" linkto = "/"/>
     <Fade cascade damping={0.08}>
     <Bento />
     <Cta />
