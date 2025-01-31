@@ -8,7 +8,6 @@ import Newsletter from "../assets/Newsletter";
 import Team from "../assets/Team";
 import Testimonials from "../assets/Testimonials";
 import { Fade } from "react-awesome-reveal";
-// import football from "../assets/videos/football.mp4"
 
 export default function Football(){
     return <>
