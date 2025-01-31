@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import rmlogo from "./images/rmf.png";
+import {Fade} from "react-awesome-reveal";
 
 export default function Hero(props) {
   const navigate = useNavigate();
@@ -178,6 +179,7 @@ export default function Hero(props) {
               }}
             ></div>
           </div>
+          <Fade cascade damping={2} duration={1500}>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
             <div className="text-center">
@@ -202,6 +204,7 @@ export default function Hero(props) {
               </div>
             </div>
           </div>
+          </Fade>
           <div
             className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
             aria-hidden="true"
