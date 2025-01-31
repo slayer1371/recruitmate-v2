@@ -11,7 +11,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Football(){
     return <>
-    <Hero video = "src/assets/video/videoplayback.mp4" sport = "Track-Field" linkto = "/"/>
+    <Hero video = "https://github.com/slayer1371/recruitmate-v2/blob/main/src/assets/video/videoplayback.mp4" sport = "Track-Field" linkto = "/"/>
     <Fade cascade damping={0.08}>
     <Bento />
     <Cta />
