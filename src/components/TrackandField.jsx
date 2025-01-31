@@ -12,7 +12,7 @@ import {Fade} from "react-awesome-reveal";
 
 export default function TrackandField(){
     return <>
-    <Hero video = "/videos/trackfield.mp4" sport = "Football" linkto = "/football" start_time = "25" />
+    <Hero video = "/videos/trackfield.mp4" sport = "Football" linkto = "/football" start_time = {25} />
     <Fade cascade damping={0.08}>
     <Feature />
     <Cta />

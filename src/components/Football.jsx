@@ -11,7 +11,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Football(){
     return <>
-    <Hero video = "/videos/football.mp4" sport = "Track-Field" linkto = "/" start_time = "0"/>
+    <Hero video = "/videos/football.mp4" sport = "Track-Field" linkto = "/" start_time = {0}/>
     <Fade cascade damping={0.08}>
     <Bento />
     <Cta />
