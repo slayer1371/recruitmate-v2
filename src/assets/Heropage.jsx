@@ -159,7 +159,7 @@ export default function Hero(props) {
             loop
             playsInline
             onLoadedMetadata={(e) => {
-              e.target.currentTime = 25;
+              e.target.currentTime = props.start_time;
             }}
           >
             <source src={props.video} type="video/mp4" />
