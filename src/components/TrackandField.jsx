@@ -8,12 +8,11 @@ import Newsletter from "../assets/Newsletter";
 import Team from "../assets/Team";
 import Testimonials from "../assets/Testimonials";
 import {Fade} from "react-awesome-reveal";
-// import trackfield from "../assets/videos/trackfield.mp4"
 
 export default function TrackandField(){
     return <>
     <Hero video = "/videos/trackfield.mp4" sport = "Football" linkto = "/football" start_time = {25} />
-    <Fade cascade damping={0.08}>
+    <Fade cascade damping={0.05}>
     <Feature />
     <Cta />
     <Team />

@@ -15,12 +15,12 @@ export default function Football(){
     <Fade cascade damping={0.08}>
     <Bento />
     <Cta />
-    <Team />
-    <Blog />
+    {/* <Team /> */}
+    {/* <Blog /> */}
     {/* <About /> */}
 
     <Newsletter />
-    <Testimonials />
+    {/* <Testimonials /> */}
     <Logoclouds />
     <Footer />
     </Fade>

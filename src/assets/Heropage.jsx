@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import rmlogo from "./images/rmf.png";
-import {Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function Hero(props) {
   const navigate = useNavigate();
@@ -41,18 +41,18 @@ export default function Hero(props) {
                 </svg>
               </button>
             </div>
-            <div className="hidden lg:flex lg:gap-x-12">
-              <a href="#" className="text-md/6 font-semibold text-stone-200">
+            <div className="hidden lg:flex lg:gap-x-20">
+              {/* <a href="#" className="text-md/6 font-semibold text-stone-200">
                 Product
-              </a>
+              </a> */}
               <a href="#" className="text-md/6 font-semibold text-stone-200">
                 Features
               </a>
               <a href="#" className="text-md/6 font-semibold text-stone-200">
-                Marketplace
+                Team
               </a>
               <a href="#" className="text-md/6 font-semibold text-stone-200">
-                Company
+                Blog
               </a>
               <a
                 href="#"
@@ -66,7 +66,10 @@ export default function Hero(props) {
               </a>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="text-sm/6 font-semibold text-stone-200">
+              <a href="#" onClick={(e)=>{
+            e.preventDefault();
+            window.open("/login", "_blank");
+          }} className="text-sm/6 font-bold text-white">
                 Log in <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
@@ -104,12 +107,12 @@ export default function Hero(props) {
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
-                    <a
+                    {/* <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
                       Product
-                    </a>
+                    </a> */}
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
@@ -120,20 +123,20 @@ export default function Hero(props) {
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
-                      Marketplace
+                      Team
                     </a>
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
-                      Company
+                      Blog
                     </a>
                     <a
                       href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        navigate(props.linkto);
-                      }}
+                      onClick={(e)=>{
+            e.preventDefault();
+            window.open("/login", "_blank");
+          }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
                       {props.sport}
@@ -142,7 +145,7 @@ export default function Hero(props) {
                   <div className="py-6">
                     <a
                       href="#"
-                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-black hover:bg-gray-50"
                     >
                       Log in
                     </a>
@@ -180,30 +183,33 @@ export default function Hero(props) {
             ></div>
           </div>
           <Fade cascade damping={2} duration={1500}>
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
-            <div className="text-center">
-              <h1 className="text-5xl font-semibold tracking-tight text-balance text-amber-200 sm:text-7xl">
-                Unlock Your Path to College Recruiting Success
-              </h1>
-              <p className="mt-8 text-lg font-medium text-pretty text-stone-200 sm:text-xl/8">
-                Gain insights from current college athletes who’ve successfully
-                navigated the recruiting process, providing mentorship and
-                real-world advice to set you up for success.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-lg bg-indigo-600 px-6 py-3 text-md font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get started
-                </a>
-                <a href="#" className="text-sm/6 font-semibold text-rose-200">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
+            <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+              <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+              <div className="text-center">
+                <h1 className="text-5xl font-bold tracking-tight text-balance text-lime-200 sm:text-7xl">
+                  Unlock Your <br />Path to <br />College Recruiting <br/>Success
+                </h1>
+                <div className="mt-10 flex items-center justify-center gap-x-6">
+                  <a
+                    href="#"
+                    onClick={(e)=>{
+            e.preventDefault();
+            window.open("/login", "_blank");
+          }}
+                    className="rounded-md bg-green-600 px-10 py-3 text-md font-semibold text-rose-100 shadow-sm 
+             hover:bg-green-700 focus-visible:outline-20 focus-visible:outline-offset-2 
+             focus-visible:outline-white hover:outline-3 hover:outline-white 
+             transition-colors duration-300 ease-in-out"
+                    // className="rounded-md bg-green-600 px-10 py-3 text-md font-semibold text-rose-100 shadow-sm hover:bg-green-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 hover:outline-3 hover:outline-white"
+                  >
+                    Get started →
+                  </a>
+                  {/* <a href="#" className="text-sm/6 font-bold text-orange-500 ">
+                    LEARN MORE <span aria-hidden="true">→</span>
+                  </a> */}
+                </div>
               </div>
             </div>
-          </div>
           </Fade>
           <div
             className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"

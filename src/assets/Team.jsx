@@ -1,3 +1,7 @@
+import joey from "./images/joey.png"
+import richard from "./images/richard.png"
+import mrinal from "./images/mrinal.png"
+
 export default function Team() {
   return (
     <>
@@ -8,12 +12,12 @@ export default function Team() {
               Meet our Team
             </h2>
           </div>
-          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 ">
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                 <img
                   className="w-2xs rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="https://img1.wsimg.com/isteam/ip/8b8fcb7f-dd76-4fdf-b62a-52d8cc7e8443/Screenshot%202024-07-05%20at%202.00.00%E2%80%AFPM.png/:/cr=t:0%25,l:0%25,w:100%25,h:93.07%25/rs=w:800,h:800,cg:true"
+                  src = {joey}
                   alt="Joey Avatar"
                 />
               </a>
@@ -107,7 +111,7 @@ export default function Team() {
               <a href="#">
                 <img
                   className="w-xs rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="https://s3.amazonaws.com/thinkific-import/1005740/BJo7slIiQ9qtpMilxU5W_FF4B5B7C-4476-4102-A2F2-B607812C710B.PNG"
+                  src = {richard}
                   alt="Richard Avatar"
                 />
               </a>
@@ -195,11 +199,14 @@ export default function Team() {
                 </ul>
               </div>
             </div>
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+
+            
+            {/* <div className="items-center w-full bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"> */}
+            <div className="items-center w-full bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 px-0 py-8 md:col-span-2 md:max-w-lg mx-auto">
               <a href="#">
                 <img
                   className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                  src={mrinal}
                   alt="Michael Avatar"
                 />
               </a>

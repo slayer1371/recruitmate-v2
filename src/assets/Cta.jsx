@@ -18,7 +18,10 @@ export default function Cta(){
         <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">Say the Right Thing. Empower Your Future.</h2>
         <p className="mt-6 text-lg/8 text-pretty text-gray-300">We provide a clear roadmap, guiding athletes through every step of their recruitment journey — from building a list of target schools to reaching out to coaches.</p>
         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-          <a href="#" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" onClick={(e)=>{
+            e.preventDefault();
+            window.open("/login", "_blank");
+          }} className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
           <a href="#" className="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
         </div>
       </div>
