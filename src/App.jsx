@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import TrackandField from "./components/TrackandField";
 import Football from "./components/Football";
-import Signup from "./assets/SIgnup";
 import Login from "./assets/Login";
+import Signup from "./assets/Signup";
 
 
 export default function App() {
