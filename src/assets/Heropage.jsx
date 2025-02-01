@@ -135,7 +135,7 @@ export default function Hero(props) {
                       href="#"
                       onClick={(e)=>{
             e.preventDefault();
-            window.open("/login", "_blank");
+            navigate("/login");
           }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
