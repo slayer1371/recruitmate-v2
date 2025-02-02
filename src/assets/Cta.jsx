@@ -1,6 +1,6 @@
 import dash from "./images/dash.png"
 
-export default function Cta(){
+export default function Cta(props){
     return <>
         <div className="bg-white">
   <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -15,8 +15,8 @@ export default function Cta(){
         </defs>
       </svg>
       <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-        <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">Say the Right Thing. Empower Your Future.</h2>
-        <p className="mt-6 text-lg/8 text-pretty text-gray-300">We provide a clear roadmap, guiding athletes through every step of their recruitment journey — from building a list of target schools to reaching out to coaches.</p>
+        <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">{(props.heading == "") ? "Say the Right Thing. Empower Your Future." : props.heading}</h2>
+        <p className="mt-6 text-lg/8 text-pretty text-gray-300">{(props.text == "") ? "We provide a clear roadmap, guiding athletes through every step of their recruitment journey — from building a list of target schools to reaching out to coaches." : props.text}</p>
         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
           <a href="#" target="_blank" rel="noopener noreferrer" onClick={(e)=>{
             e.preventDefault();

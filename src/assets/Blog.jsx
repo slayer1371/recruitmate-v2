@@ -1,9 +1,11 @@
+import { Fade } from "react-awesome-reveal";
 import blog from "../data/blog";
 import Article from "./Article";
 
 export default function Blog() {
   return (
     <>
+    <Fade >
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
@@ -21,6 +23,7 @@ export default function Blog() {
           </div>
         </div>
       </div>
+      </Fade>
     </>
   );
 }

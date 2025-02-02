@@ -1,7 +1,7 @@
 export default function Feature()
 {
     return <>
-        <div className="bg-white py-24 sm:py-32">
+        <div id = "features" className="bg-white py-24 sm:py-32">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto max-w-2xl lg:text-center">
       <h2 className="text-base/7 font-semibold text-indigo-600">RUN FOR A CAUSE</h2>
@@ -11,7 +11,7 @@ export default function Feature()
     <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-5xl">
       <dl className="grid max-w-xl grid-cols-1 gap-x-10 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
         <div className="relative pl-16">
-          <dt className="text-base/7 font-semibold text-gray-900">
+          <dt className="text-base/7 font-semibold text-stone-700">
             <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
               <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
@@ -22,7 +22,7 @@ export default function Feature()
           {/* <dd className="mt-2 text-base/7 text-gray-600">Craft compelling emails that resonate with college coaches, showcasing your unique talents and aspirations.</dd> */}
         </div>
         <div className="relative pl-16">
-          <dt className="text-base/7 font-semibold text-gray-900">
+          <dt className="text-base/7 font-semibold text-stone-700">
             <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
               <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
@@ -33,7 +33,7 @@ export default function Feature()
           {/* <dd className="mt-2 text-base/7 text-gray-600">Gain the confidence to reach out to college coaches effectively, setting yourself apart from the competition.</dd> */}
         </div>
         <div className="relative pl-16">
-          <dt className="text-base/7 font-semibold text-gray-900">
+          <dt className="text-base/7 font-semibold text-stone-700">
             <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
               <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />

@@ -1,11 +1,13 @@
 import { useNavigate } from "react-router";
 import rmf from "./images/rmf.png";
 import signupimg from "./images/signup.svg";
+import { Fade } from "react-awesome-reveal";
 
 export default function Signup() {
     const navigate = useNavigate();
   return (
     <>
+    <Fade>
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-row items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 ">
@@ -114,6 +116,7 @@ export default function Signup() {
           </div>
         </div>
       </section>
+      </Fade>
     </>
   );
 }

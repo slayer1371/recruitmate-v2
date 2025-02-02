@@ -45,13 +45,23 @@ export default function Hero(props) {
               {/* <a href="#" className="text-md/6 font-semibold text-stone-200">
                 Product
               </a> */}
-              <a href="#" className="text-md/6 font-semibold text-stone-200">
+              <a href="#features" className="text-md/6 font-semibold text-stone-200">
                 Features
               </a>
-              <a href="#" className="text-md/6 font-semibold text-stone-200">
+              <a href="#" 
+              onClick={(e)=>{
+                e.preventDefault();
+                navigate("/team");
+              }}
+              className="text-md/6 font-semibold text-stone-200">
                 Team
               </a>
-              <a href="#" className="text-md/6 font-semibold text-stone-200">
+              <a href="#" 
+              onClick={(e)=>{
+                e.preventDefault();
+                navigate("/blog");
+              }}
+              className="text-md/6 font-semibold text-stone-200">
                 Blog
               </a>
               <a
@@ -121,12 +131,20 @@ export default function Hero(props) {
                     </a>
                     <a
                       href="#"
+                      onClick={(e)=>{
+                e.preventDefault();
+                navigate("/team");
+              }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
                       Team
                     </a>
                     <a
                       href="#"
+                      onClick={(e)=>{
+                e.preventDefault();
+                navigate("/blog");
+              }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
                       Blog
@@ -135,7 +153,7 @@ export default function Hero(props) {
                       href="#"
                       onClick={(e)=>{
             e.preventDefault();
-            navigate("/login");
+            navigate(props.linkto)
           }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
                     >
