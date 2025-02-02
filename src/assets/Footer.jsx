@@ -1,9 +1,12 @@
+import "./footer.css"
+import rmf from "./images/rmf.png"
+
 export default function Footer() {
   return (
     <>
       <footer className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8">
-          <div className="lg:flex lg:items-center lg:justify-between">
+          {/* <div className="lg:flex lg:items-center lg:justify-between">
             <div className="flex justify-center text-teal-600 sm:justify-start dark:text-teal-300">
               <svg
                 className="h-8"
@@ -55,7 +58,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 max-w-md text-center leading-relaxed text-gray-500 sm:text-left lg:mt-0 dark:text-gray-400"></p>
-          </div>
+          </div> */}
 
           <div className="mt-16 grid grid-cols-1 gap-8 border-t border-gray-100 pt-16 md:grid-cols-4 lg:grid-cols-6 dark:border-gray-800">
             <div className="text-center sm:text-left">
@@ -247,10 +250,6 @@ export default function Footer() {
               </p>
 
               <div className="mx-auto mt-8 max-w-md sm:ms-0">
-                <p className="text-center leading-relaxed text-gray-500 ltr:sm:text-left rtl:sm:text-right dark:text-gray-400">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Earum id, iure consectetur et error hic!
-                </p>
 
                 <form className="mt-4">
                   <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
@@ -278,7 +277,7 @@ export default function Footer() {
 
           <div className="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between dark:border-gray-800">
             <p className="text-center text-sm text-gray-500 sm:text-left dark:text-gray-400">
-              Copyright &copy; 2022. All rights reserved.
+              Copyright &copy; 2025. All rights reserved.
             </p>
 
             <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
