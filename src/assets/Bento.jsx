@@ -1,4 +1,4 @@
-import mobile from "./images/mobile.png";
+import mobile from "./images/mobile1.jpg";
 import mobile2 from "./images/mobile2.png";
 
 export default function Bento() {
@@ -30,7 +30,7 @@ export default function Bento() {
                   <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                     <img
                       className="size-full object-cover object-top"
-                      src={mobile}
+                      src={mobile2}
                       alt=""
                     />
                   </div>
@@ -43,13 +43,13 @@ export default function Bento() {
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                   <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                    Earn Your Spot, or Watch Someone Else Take It
+                  Earn Your Spot, or Watch Someone Else Take It
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                    ✅ Find the right schools for YOU.
+                  <b>→</b>Find the right schools for YOU.
                     <br />
-                    ✅ Learn exactly what coaches want at your position.
-                    <br />✅ Take control of your future before it’s too late.
+                    <b>→</b>Learn exactly what coaches want at your position.
+                    <br /><b>→</b>Take control of your future before it’s too late.
                   </p>
                 </div>
                 {/* <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -64,8 +64,8 @@ export default function Bento() {
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                   {/* <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"></p> */}
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                    ✅ Use Hudl, Twitter, and Instagram the way recruiters do.
-                    <br />✅ Keep coaches interested with the right follow-up
+                  <b>→</b>Use Hudl, Twitter, and Instagram the way recruiters do.
+                    <br /><b>→</b>Keep coaches interested with the right follow-up
                     game.
                   </p>
                 </div>
@@ -85,10 +85,10 @@ export default function Bento() {
                 <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                   {/* <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Powerful APIs</p> */}
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                    ✅ Win at camps, combines, and showcases
+                  <b>→</b>Win at camps, combines, and showcases
                     <br />
-                    ✅ Master the mental game and training balance
-                    <br />✅ Get real guidance from players who made it to the
+                    <b>→</b>Master the mental game and training balance
+                    <br /><b>→</b>Get real guidance from players who made it to the
                     next level
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export default function Bento() {
                   <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div> */}
                         <img
                           className="size-full object-cover object-top"
-                          src={mobile2}
+                          src={mobile}
                           alt=""
                         />
                       </div>

@@ -18,7 +18,7 @@ export default function Team() {
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                 <img
-                  className="w-2xs rounded-lg sm:rounded-none sm:rounded-l-lg"
+                  className="w-xs rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src = {joey}
                   alt="Joey Avatar"
                 />
@@ -115,6 +115,7 @@ export default function Team() {
                   className="w-xs rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src = {richard}
                   alt="Richard Avatar"
+                  
                 />
               </a>
               <div className="p-5">
@@ -204,10 +205,10 @@ export default function Team() {
 
             
             {/* <div className="items-center w-full bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"> */}
-            <div className="items-center w-full bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 px-0 py-8 md:col-span-2 md:max-w-lg mx-auto">
+            <div className="items-center w-full bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 px-0 py-10 md:col-span-2 md:max-w-lg mx-auto">
               <a href="#">
                 <img
-                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                  className="w-xs rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={mrinal}
                   alt="Michael Avatar"
                 />
