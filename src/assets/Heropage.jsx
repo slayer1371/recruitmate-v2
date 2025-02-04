@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router";
 import rmlogo from "./images/rmf.png";
 import { Fade } from "react-awesome-reveal";
+import { useState } from "react";
 
 export default function Hero(props) {
   const navigate = useNavigate();
+  const [menuOpen, setMenuopen] = new useState(false);
   return (
     <>
       <div className="bg-white">
@@ -21,11 +23,15 @@ export default function Hero(props) {
             <div className="flex lg:hidden">
               <button
                 type="button"
+                onClick={(e)=>{
+                  e.preventDefault();
+                  setMenuopen(!menuOpen)
+                }}
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
-                  className="size-6"
+                  className="size-6 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
@@ -84,17 +90,20 @@ export default function Hero(props) {
               </a>
             </div>
           </nav>
+          
+          {menuOpen && (
           <div className="lg:hidden" role="dialog" aria-modal="true">
             <div className="fixed inset-0 z-50"></div>
             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Your Company</span>
+                  <span className="sr-only">RecruitMate</span>
                   <img className="h-8 w-auto" src={rmlogo} alt="" />
                 </a>
                 <button
                   type="button"
                   className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                  onClick={() => setMenuopen(false)}
                 >
                   <span className="sr-only">Close menu</span>
                   <svg
@@ -125,7 +134,7 @@ export default function Hero(props) {
                     </a> */}
                     <a
                       href="#"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
                     >
                       Features
                     </a>
@@ -135,7 +144,7 @@ export default function Hero(props) {
                 e.preventDefault();
                 navigate("/team");
               }}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
                     >
                       Team
                     </a>
@@ -145,7 +154,7 @@ export default function Hero(props) {
                 e.preventDefault();
                 navigate("/blog");
               }}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
                     >
                       Blog
                     </a>
@@ -155,7 +164,7 @@ export default function Hero(props) {
             e.preventDefault();
             navigate(props.linkto)
           }}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
                     >
                       {props.sport}
                     </a>
@@ -172,6 +181,7 @@ export default function Hero(props) {
               </div>
             </div>
           </div>
+          )}
         </header>
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <video
