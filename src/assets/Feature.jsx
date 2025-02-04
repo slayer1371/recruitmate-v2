@@ -1,14 +1,17 @@
-export default function Feature()
+export default function Feature(props)
 {
     return <>
-        <div id = "features" className="bg-white py-24 sm:py-32">
+        <div id = "features" className="bg-white py-24 sm:py-40 sm:pb-50 sm:pt-40">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto max-w-2xl lg:text-center">
-      <h2 className="text-base/7 font-semibold text-indigo-600">RUN FOR A CAUSE</h2>
-      <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">Learn from Those Who&apos;ve Done It</p>
-      <p className="mt-6 text-lg/8 text-gray-600">Gain insights from current college athletes who’ve successfully navigated the recruiting process, providing mentorship and real-world advice to set you up for success.</p>
+      <h2 className="text-base/7 font-semibold text-indigo-600">{props.subheader}</h2>
+      <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">{props.header}</p>
+      <p className="mt-6 text-lg/8 text-gray-600">{props.content}</p>
     </div>
-    <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-5xl">
+    </div>
+    </div>
+
+    {/* <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-5xl">
       <dl className="grid max-w-xl grid-cols-1 gap-x-10 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
         <div className="relative pl-16">
           <dt className="text-base/7 font-semibold text-stone-700">
@@ -19,7 +22,7 @@ export default function Feature()
             </div>
             Craft compelling emails that resonate with college coaches, showcasing your unique talents and aspirations.
           </dt>
-          {/* <dd className="mt-2 text-base/7 text-gray-600">Craft compelling emails that resonate with college coaches, showcasing your unique talents and aspirations.</dd> */}
+          <dd className="mt-2 text-base/7 text-gray-600">Craft compelling emails that resonate with college coaches, showcasing your unique talents and aspirations.</dd>
         </div>
         <div className="relative pl-16">
           <dt className="text-base/7 font-semibold text-stone-700">
@@ -30,7 +33,7 @@ export default function Feature()
             </div>
             Gain the confidence to reach out to college coaches effectively, setting yourself apart from the competition.
           </dt>
-          {/* <dd className="mt-2 text-base/7 text-gray-600">Gain the confidence to reach out to college coaches effectively, setting yourself apart from the competition.</dd> */}
+          <dd className="mt-2 text-base/7 text-gray-600">Gain the confidence to reach out to college coaches effectively, setting yourself apart from the competition.</dd>
         </div>
         <div className="relative pl-16">
           <dt className="text-base/7 font-semibold text-stone-700">
@@ -42,8 +45,8 @@ export default function Feature()
             Learn strategic communication tactics that maximize your chances of getting noticed and recruited by top colleges.
           </dt>
           {/* <dd className="mt-2 text-base/7 text-gray-600">Learn strategic communication tactics that maximize your chances of getting noticed and recruited by top colleges.</dd> */}
-        </div>
-        {/* <div className="relative pl-16">
+        {/* </div>
+        <div className="relative pl-16">
           <dt className="text-base/7 font-semibold text-gray-900">
             <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
               <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -53,11 +56,8 @@ export default function Feature()
             Advanced security
           </dt>
           <dd className="mt-2 text-base/7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
-        </div> */}
-      </dl>
-    </div>
-  </div>
-</div>
-
+        </div>
+      </dl> */}
+  {/* </div> */}
     </>
 }

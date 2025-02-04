@@ -5,6 +5,7 @@ import Login from "./assets/Login";
 import Signup from "./assets/Signup";
 import Team from "./assets/Team";
 import Blog from "./assets/Blog";
+import InputForm from "./assets/InputForm";
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
         <Route path = "/login" element = {<Login />} />
         <Route path = "/team" element = {<Team />} />
         <Route path = "/blog" element = {<Blog />} />
-
+        <Route path = "/info" element = {<InputForm />} />
       </Routes>
     </BrowserRouter>    
     </>
