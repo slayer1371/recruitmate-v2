@@ -1,189 +1,3 @@
-// import { useNavigate } from "react-router";
-// import rmlogo from "./images/rmf.png";
-// import { Fade } from "react-awesome-reveal";
-// import { useState } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-
-// export default function Hero(props) {
-//   const navigate = useNavigate();
-//   const [menuOpen, setMenuopen] = new useState(false);
-//   return (
-//     <>
-//       <div className="bg-white">
-//         <header className="absolute inset-x-0 top-0 z-50">
-//           <nav
-//             className="flex items-center justify-between p-6 lg:px-8"
-//             aria-label="Global"
-//           >
-//             <div className="flex lg:flex-1">
-//               <a href="#" className="-m-1.5 p-1.5">
-//                 <span className="sr-only">RecruitMate</span>
-//                 <img className="h-8 w-auto" src={rmlogo} alt="" />
-//               </a>
-//             </div>
-//             <div className="flex lg:hidden">
-//               <button
-//                 type="button"
-//                 onClick={(e)=>{
-//                   e.preventDefault();
-//                   setMenuopen(!menuOpen)
-//                 }}
-//                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-//               >
-//                 <span className="sr-only">Open main menu</span>
-//                 <svg
-//                   className="size-6 text-white"
-//                   fill="none"
-//                   viewBox="0 0 24 24"
-//                   strokeWidth="1.5"
-//                   stroke="currentColor"
-//                   aria-hidden="true"
-//                   data-slot="icon"
-//                 >
-//                   <path
-//                     strokeLinecap="round"
-//                     strokeLinejoin="round"
-//                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-//                   />
-//                 </svg>
-//               </button>
-//             </div>
-//             <div className="hidden lg:flex lg:gap-x-20">
-//               {/* <a href="#" className="text-md/6 font-semibold text-stone-200">
-//                 Product
-//               </a> */}
-//               <a href="#features" className="text-md/6 font-semibold text-stone-200">
-//                 Features
-//               </a>
-//               <a href="#" 
-//               onClick={(e)=>{
-//                 e.preventDefault();
-//                 navigate("/team");
-//               }}
-//               className="text-md/6 font-semibold text-stone-200">
-//                 Team
-//               </a>
-//               <a href="#" 
-//               onClick={(e)=>{
-//                 e.preventDefault();
-//                 navigate("/blog");
-//               }}
-//               className="text-md/6 font-semibold text-stone-200">
-//                 Blog
-//               </a>
-//               <a
-//                 href="#"
-//                 onClick={(e) => {
-//                   e.preventDefault();
-//                   navigate(props.linkto);
-//                 }}
-//                 className="text-md/6 font-semibold text-stone-200"
-//               >
-//                 {props.sport}
-//               </a>
-//             </div>
-//             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-//               <a href="#" onClick={(e)=>{
-//             e.preventDefault();
-//             window.open("/login", "_blank");
-//           }} className="text-sm/6 font-bold text-white">
-//                 Log in <span aria-hidden="true">&rarr;</span>
-//               </a>
-//             </div>
-//           </nav>
-          
-//           {menuOpen && (
-//           <div className="lg:hidden" role="dialog" aria-modal="true">
-//             <div className="fixed inset-0 z-50"></div>
-//             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-//               <div className="flex items-center justify-between">
-//                 <a href="#" className="-m-1.5 p-1.5">
-//                   <span className="sr-only">RecruitMate</span>
-//                   <img className="h-8 w-auto" src={rmlogo} alt="" />
-//                 </a>
-//                 <button
-//                   type="button"
-//                   className="-m-2.5 rounded-md p-2.5 text-gray-700"
-//                   onClick={() => setMenuopen(false)}
-//                 >
-//                   <span className="sr-only">Close menu</span>
-//                   <svg
-//                     className="size-6"
-//                     fill="none"
-//                     viewBox="0 0 24 24"
-//                     strokeWidth="1.5"
-//                     stroke="currentColor"
-//                     aria-hidden="true"
-//                     data-slot="icon"
-//                   >
-//                     <path
-//                       strokeLinecap="round"
-//                       strokeLinejoin="round"
-//                       d="M6 18 18 6M6 6l12 12"
-//                     />
-//                   </svg>
-//                 </button>
-//               </div>
-//               <div className="mt-6 flow-root">
-//                 <div className="-my-6 divide-y divide-gray-500/10">
-//                   <div className="space-y-2 py-6">
-//                     {/* <a
-//                       href="#"
-//                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-200 hover:bg-gray-50"
-//                     >
-//                       Product
-//                     </a> */}
-//                     <a
-//                       href="#"
-//                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
-//                     >
-//                       Features
-//                     </a>
-//                     <a
-//                       href="#"
-//                       onClick={(e)=>{
-//                 e.preventDefault();
-//                 navigate("/team");
-//               }}
-//                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
-//                     >
-//                       Team
-//                     </a>
-//                     <a
-//                       href="#"
-//                       onClick={(e)=>{
-//                 e.preventDefault();
-//                 navigate("/blog");
-//               }}
-//                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
-//                     >
-//                       Blog
-//                     </a>
-//                     <a
-//                       href="#"
-//                       onClick={(e)=>{
-//             e.preventDefault();
-//             navigate(props.linkto)
-//           }}
-//                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
-//                     >
-//                       {props.sport}
-//                     </a>
-//                   </div>
-//                   <div className="py-6">
-//                     <a
-//                       href="#"
-//                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-black hover:bg-gray-50"
-//                     >
-//                       Log in
-//                     </a>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           )}
-//         </header>
 import { useNavigate } from "react-router";
 import rmlogo from "./images/rmf.png";
 import { Fade } from "react-awesome-reveal";
@@ -199,7 +13,7 @@ export default function Hero(props) {
     open: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.3 },
     },
     closed: {
       opacity: 0,
@@ -303,7 +117,7 @@ export default function Hero(props) {
                 role="dialog"
                 aria-modal="true"
               >
-                <div className="fixed inset-0 z-50 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div className="fixed inset-0 z-50 bg-rose-100 opacity-100 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                   <div className="flex items-center justify-between">
                     <a href="#" className="-m-1.5 p-1.5">
                       <span className="sr-only">RecruitMate</span>
@@ -332,7 +146,7 @@ export default function Hero(props) {
                     </button>
                   </div>
                   <div className="mt-6 flow-root">
-                    <div className="-my-6 divide-y divide-gray-500/10">
+                    <div className="-my-6 flex flex-col items-center divide-y divide-gray-500/10">
                       <a
                         href="#"
                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
@@ -370,15 +184,15 @@ export default function Hero(props) {
                         {props.sport}
                       </a>
                     </div>
-                    <div className="py-6">
+                    <div className="py-6 flex flex-col items-center">
                       <a
                         href="#"
                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-black hover:bg-gray-50"
                       >
                         Log in
                       </a>
-                    </div>
                   </div>
+                </div>
                 </div>
               </motion.div>
             )}
