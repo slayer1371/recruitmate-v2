@@ -235,7 +235,6 @@ export default function Hero(props) {
                 <span className="sr-only">Open main menu</span>
                 <svg
                   className="size-6 text-white"
-                  className="size-6 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
