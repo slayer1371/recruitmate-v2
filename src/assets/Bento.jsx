@@ -1,5 +1,5 @@
-import mobile from "./images/mobile1.jpg";
-import mobile2 from "./images/mobile2.png";
+// import mobile from "./images/mobile1.jpg";
+// import mobile2 from "./images/mobile2.png";
 
 export default function Bento() {
   return (
@@ -22,23 +22,35 @@ export default function Bento() {
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                     Send messages in the utmost professional manner, that get
-                    opened and answered
+                    opened and answered.
                     <br />
                   </p>
                 </div>
-                <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
-                  <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                    <img
-                      className="size-full object-cover object-top"
+                <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  Earn Your Spot, or Watch Someone Else Take It
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  <b>→</b> Find the right schools for YOU.
+                    <br />
+                    <b>→</b> Learn exactly what coaches want at your position.
+                    <br /><b>→</b> Take control of your future before it’s too late.
+                  </p>
+                </div>
+                
+                {/* <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm"> */}
+                  {/* <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl"> */}
+                    {/* <img
+                      className="size-full object-cover object-top "
                       src={mobile2}
                       alt=""
-                    />
-                  </div>
-                </div>
+                    /> */}
+                  {/* </div> */}
+                {/* </div> */}
               </div>
               <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]"></div>
             </div>
-            <div className="relative max-lg:row-start-1">
+            {/* <div className="relative max-lg:row-start-1">
               <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -46,23 +58,22 @@ export default function Bento() {
                   Earn Your Spot, or Watch Someone Else Take It
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  <b>→</b>Find the right schools for YOU.
+                  <b>→</b> Find the right schools for YOU.
                     <br />
-                    <b>→</b>Learn exactly what coaches want at your position.
-                    <br /><b>→</b>Take control of your future before it’s too late.
+                    <b>→</b> Learn exactly what coaches want at your position.
+                    <br /><b>→</b> Take control of your future before it’s too late.
                   </p>
                 </div>
-                {/* <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
-            <img className="w-full max-lg:max-w-xs" src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png" alt="" />
-          </div> */}
+
               </div>
               <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]"></div>
-            </div>
+            </div> */}
+
             <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
               <div className="absolute inset-px rounded-lg bg-white"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                  {/* <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"></p> */}
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"></p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                   <b>→</b>Use Hudl, Twitter, and Instagram the way recruiters do.
                     <br /><b>→</b>Keep coaches interested with the right follow-up
@@ -92,22 +103,22 @@ export default function Bento() {
                     next level
                   </p>
                 </div>
-                <div className="relative min-h-[30rem] w-full grow">
-                  <div className="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
-                    <div className="flex bg-gray-800/40 ring-1 ring-white/5">
-                      <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
+                {/* <div className="relative min-h-[30rem] w-full grow">
+                  <div className="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl"> */}
+                    {/* <div className="flex bg-gray-800/40 ring-1 ring-white/5">
+                      <div className="-mb-px flex text-sm/6 font-medium text-gray-400"> */}
                         {/* <div className="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">NotificationSetting.jsx</div>
                   <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div> */}
-                        <img
+                        {/* <img
                           className="size-full object-cover object-top"
                           src={mobile}
                           alt=""
-                        />
-                      </div>
-                    </div>
-                    <div className="px-6 pt-6 pb-14"></div>
-                  </div>
-                </div>
+                        /> */}
+                      {/* </div>
+                    </div> */}
+                    {/* <div className="px-6 pt-6 pb-14"></div> */}
+                  {/* </div>
+                </div> */}
               </div>
               <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
             </div>

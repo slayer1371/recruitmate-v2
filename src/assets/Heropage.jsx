@@ -230,7 +230,7 @@ export default function Hero(props) {
               <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
               <div className="text-center">
                 <h1 className="text-5xl font-bold tracking-tight text-balance text-lime-200 sm:text-7xl">
-                  Unlock Your <br />Path to <br />College Recruiting <br/>Success
+                  {props.heading}
                 </h1>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
