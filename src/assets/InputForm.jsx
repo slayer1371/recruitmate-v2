@@ -1,10 +1,12 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import rmf from "./images/rmf.png";
 import signupimg from "./images/signup.svg";
 import { Fade } from "react-awesome-reveal";
-
+import { motion } from "framer-motion";
 
 const InputForm = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
   const formRef = useRef(null);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,15 +17,44 @@ const InputForm = () => {
         body: new FormData(formRef.current),
       }
     )
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        alert(data.msg);
-      })
-      .catch((err) => console.log(err));
-  };
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      setShowPopup(true);
+      formRef.current.reset(); 
+    })
+    .catch((err) => {
+      console.error(err);
+      alert("Something went wrong. Please try again later.");
+    });
+  }
   return (
     <>
+        {showPopup && (
+          <motion.div
+    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+  >
+    <motion.div
+      className="bg-white p-30 rounded-lg shadow-lg text-center"
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{ scale: 0.8, opacity: 0 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
+      <h2 className="text-3xl font-semibold mb-2">Thank you for your interest!</h2>
+      <p className="text-md">Look forward to hearing from us soon!</p>
+      <button
+        className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg"
+        onClick={() => setShowPopup(false)}
+      >
+        Close
+      </button>
+    </motion.div>
+  </motion.div>
+)}
       <Fade>
         <section className="bg-gray-50 dark:bg-gray-900">
           <div className="flex flex-row items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
