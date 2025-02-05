@@ -1,6 +1,6 @@
 // import Blog from "../assets/Blog";
 import Cta from "../assets/Cta";
-import Bento from "../assets/Bento";
+// import Bento from "../assets/Bento";
 import Footer from "../assets/Footer";
 import Hero from "../assets/Heropage";
 import Logoclouds from "../assets/Logoclouds";

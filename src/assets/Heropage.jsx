@@ -22,10 +22,6 @@ export default function Hero(props) {
     },
   };
 
-  
-  
-  
-
   return (
     <>
       <div className="bg-white">
@@ -234,10 +230,10 @@ export default function Hero(props) {
                 </h1>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
-                    href=""
+                    href="#"
                     onClick={(e)=>{
             e.preventDefault();
-            window.open("https://form.typeform.com/to/ZjFNYX10", "_blank");
+            window.open("/info", "_blank");
           }}
                     className="rounded-md bg-green-600 px-10 py-3 text-md font-semibold text-rose-100 shadow-sm 
              hover:bg-green-700 focus-visible:outline-20 focus-visible:outline-offset-2 

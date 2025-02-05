@@ -1,5 +1,5 @@
 import "./footer.css"
-import rmf from "./images/rmf.png"
+// import rmf from "./images/rmf.png"
 
 export default function Footer() {
   return (
@@ -266,6 +266,10 @@ export default function Footer() {
                     <button
                       className="block rounded-full bg-indigo-500 px-8 py-3 font-medium text-white transition hover:bg-indigo-600"
                       type="submit"
+                      onClick={(e)=>{
+                        e.preventDefault();
+                        window.open("/info","_blank");
+                      }}
                     >
                       Subscribe
                     </button>
