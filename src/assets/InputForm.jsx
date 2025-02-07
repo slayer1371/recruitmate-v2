@@ -196,9 +196,9 @@ const InputForm = () => {
               </div>
               </Fade>
             </div>
-            <div>
+            {/* <div>
               <img src={signupimg} />
-            </div>
+            </div> */}
           </div>
         </section>
       </Fade>
