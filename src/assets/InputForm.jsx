@@ -141,7 +141,7 @@ const InputForm = () => {
                   </div>
                   <div>
                     <label
-                      htmlFor="sport"
+                      htmlFor="advert"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       How did you hear about us?
