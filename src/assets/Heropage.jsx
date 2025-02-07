@@ -205,7 +205,7 @@ export default function Hero(props) {
               e.target.currentTime = props.start_time;
             }}
           >
-            <source src={props.video} type="video/mp4" />
+            <source src={props.video} type="video/mov" />
             Your browser does not support the video tag.
           </video>
 
