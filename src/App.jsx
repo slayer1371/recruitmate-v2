@@ -6,10 +6,13 @@ import Signup from "./assets/Signup";
 import Team from "./assets/Team";
 import Blog from "./assets/Blog";
 import InputForm from "./assets/InputForm";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
     <>
+            <Analytics />
+
     <BrowserRouter>
       <Routes>
         <Route path = "/" element= {<TrackandField />} />
