@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import rmf from "./images/rmf.png";
-import signupimg from "./images/signup.svg";
+// import signupimg from "./images/signup.svg";
 import { Fade } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 
@@ -57,8 +57,8 @@ const InputForm = () => {
 )}
       <Fade>
         <section className="bg-gray-50 dark:bg-gray-900">
-          <div className="flex flex-row items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
-            <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 ">
+          <div className="flex flex-row items-center justify-center px-6 py-8 mx-auto lg:py-0 ">
+            <div className="w-full bg-white rounded-lg shadow dark:border md:mt-20 md:mb-20 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 ">
               <Fade cascade>
               <div className="p-6 space-y-4 md:space-y-6 sm:p-8 ">
                 <a className="flex items-center mb-6 text-xl font-semibold dark:text-white">
@@ -123,6 +123,22 @@ const InputForm = () => {
                   </div>
                   <div>
                     <label
+                      htmlFor="parent_mobile"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >
+                      Parent&apos;s Mobile Number
+                    </label>
+                    <input
+                      type="number"
+                      name="parentphone"
+                      id="parentphone"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="+1-1234567809"
+                      required=""
+                    />
+                  </div>
+                  <div>
+                    <label
                       htmlFor="sport"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
@@ -137,6 +153,27 @@ const InputForm = () => {
                       <option value="">Choose a sport</option>
                       <option value="track_and_field">Track and Field</option>
                       <option value="football">Football</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="year"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >
+                      Graduating Year
+                    </label>
+                    <select
+                      name="gyear"
+                      id="gyear"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      required
+                    >
+                      <option value="">Choose a year</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029+">2029 and above</option>
                     </select>
                   </div>
                   <div>
