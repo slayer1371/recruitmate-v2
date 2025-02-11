@@ -1,9 +1,9 @@
-import joey from "./images/joey.png"
-import richard from "./images/richard.png"
-import mrinal from "./images/mrinal.png"
+import joey from "../images/joey.png"
+import richard from "../images/richard.png"
+import mrinal from "../images/mrinal.png"
 import { Fade } from "react-awesome-reveal";
 
-export default function Team() {
+export default function Teamtnf() {
   return (
     <>
     <Fade >

@@ -1,5 +1,5 @@
 import { Fade } from "react-awesome-reveal";
-import { conference } from "../data/conferenceData";
+import { conference } from "../../data/conferenceData";
 
 const ConferenceList = () => {
   return (

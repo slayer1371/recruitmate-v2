@@ -3,11 +3,13 @@ import TrackandField from "./components/TrackandField";
 import Football from "./components/Football";
 import Login from "./assets/Login";
 import Signup from "./assets/Signup";
-import Team from "./assets/Team";
 // import Blog from "./assets/Blog";
 import InputForm from "./assets/InputForm";
 import { Analytics } from "@vercel/analytics/react";
-import ConferenceList from "./assets/Resources";
+import ConferenceList from "./assets/Resources/Resources-tnf";
+import Resourcesft from "./assets/Resources/Resources-fb";
+import Teamtnf from "./assets/Teams/Team-tnf";
+import Teamfb from "./assets/Teams/Team-ft";
 
 export default function App() {
   return (
@@ -20,10 +22,12 @@ export default function App() {
         <Route path = "/football" element = {<Football />} />
         <Route path = "/signup" element = {<Signup />} />
         <Route path = "/login" element = {<Login />} />
-        <Route path = "/team" element = {<Team />} />
+        <Route path = "/team-track-and-field" element = {<Teamtnf />} />
+        <Route path = "/team-football" element = {<Teamfb />} />
         {/* <Route path = "/blog" element = {<Blog />} /> */}
         <Route path = "/info" element = {<InputForm />} />
-        <Route path = "/resources" element = {<ConferenceList />} />
+        <Route path = "/resources-track-and-field" element = {<ConferenceList />} />
+        <Route path = "/resources-football" element = {<Resourcesft />} />
       </Routes>
     </BrowserRouter>    
     </>

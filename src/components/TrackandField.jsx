@@ -11,7 +11,7 @@ import {Fade} from "react-awesome-reveal";
 
 export default function TrackandField(){
     return <>
-    <Hero heading = "Your Path to College Track Starts Here" video = "/videos/trackfield_converted.mp4" sport = "Football" linkto = "/football" start_time = {25} />
+    <Hero heading = "Your Path to College Track Starts Here" video = "/videos/trackfield_converted.mp4" sport = "Football" linkto = "/football" res = "/resources-track-and-field" team = "/team-track-and-field" start_time = {25} />
     <Fade cascade damping={0.05}>
     <Feature header = "Learn from Those Who&apos;ve Done It" subheader = "" content = "Gain insights from current college athletes who’ve successfully navigated the recruiting process, providing mentorship and real-world advice to set you up for success." />
     <Cta heading = "Know Where to Start?" text = "" />

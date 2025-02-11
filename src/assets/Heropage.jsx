@@ -65,7 +65,7 @@ export default function Hero(props) {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate("/team");
+                  navigate(props.team);
                 }}
                 className="text-md/6 font-semibold text-stone-200"
               >
@@ -75,7 +75,7 @@ export default function Hero(props) {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate("/resources");
+                  navigate(props.res);
                 }}
                 className="text-md/6 font-semibold text-stone-200"
               >
@@ -153,7 +153,7 @@ export default function Hero(props) {
                         href="#"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/team");
+                          navigate(props.team);
                         }}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
                       >
@@ -163,7 +163,7 @@ export default function Hero(props) {
                         href="#"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/resources");
+                          navigate(props.res);
                         }}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
                       >

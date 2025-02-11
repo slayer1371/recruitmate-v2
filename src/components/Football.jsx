@@ -12,7 +12,7 @@ import Feature from "../assets/Feature";
 
 export default function Football(){
     return <>
-    <Hero heading = "From Friday Night Lights to Scholarship Offers" video = "/videos/football_converted.mp4" sport = "Track-Field" linkto = "/" start_time = {0}/>
+    <Hero heading = "From Friday Night Lights to Scholarship Offers" video = "/videos/football_converted.mp4" sport = "Track-Field" linkto = "/" res = "/resources-football" team = "/team-football" start_time = {0}/>
     <Fade cascade damping={0.08}>
     <Feature header = "Find the Right Fit and Secure your Spot" subheader = "" content = "Get a step-by-step game plan to target the right schools, understand what coaches want at your position, and track your progress to stay on top of key deadlines." />
     {/* <Bento /> */}
