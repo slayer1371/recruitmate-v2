@@ -75,11 +75,11 @@ export default function Hero(props) {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate("/blog");
+                  navigate("/resources");
                 }}
                 className="text-md/6 font-semibold text-stone-200"
               >
-                Blog
+                Resources
               </a>
               <a
                 href="#"
@@ -163,11 +163,11 @@ export default function Hero(props) {
                         href="#"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/blog");
+                          navigate("/resources");
                         }}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black hover:bg-gray-50"
                       >
-                        Blog
+                        Resources
                       </a>
                       <a
                         href="#"
